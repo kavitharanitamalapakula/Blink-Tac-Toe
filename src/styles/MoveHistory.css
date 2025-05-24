@@ -1,7 +1,9 @@
 .move-history {
   margin-top: 1.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column; 
+  /* display: grid;
+  grid-template-columns: 1fr; */
   gap: 1rem;
 }
 
@@ -16,6 +18,7 @@
   backdrop-filter: blur(16px);
   border-radius: 1rem;
   padding: 1rem;
+  font-size: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -23,6 +26,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 0.5rem;
+
 }
 
 .move-history-emojis {
@@ -31,5 +35,5 @@
 }
 
 .move-emoji {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }

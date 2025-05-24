@@ -22,14 +22,16 @@ const PlayingPhase = ({
         playerMoves={playerMoves}
       />
 
-      <Board
-        board={board}
-        onCellClick={onCellClick}
-        winner={winner}
-        isComputerTurn={isComputerTurn}
-      />
+      <div className='main-container' style={{display:"flex", justifyContent:"space-around"}}>
+        <Board
+          board={board}
+          onCellClick={onCellClick}
+          winner={winner}
+          isComputerTurn={isComputerTurn}
+        />
 
-      <MoveHistory playerMoves={playerMoves} />
+        <MoveHistory playerMoves={playerMoves} />
+      </div>
     </>
   );
 };

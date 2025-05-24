@@ -15,7 +15,7 @@
 }
 
 .turn-text {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: white;
   margin-bottom: 0.5rem;
@@ -29,6 +29,7 @@
 
 .player-info {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
 }
 
 .player-category {
@@ -37,5 +38,5 @@
 }
 
 .player-moves {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }

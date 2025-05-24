@@ -10,7 +10,7 @@ const MoveHistory = ({ playerMoves }) => {
           </h3>
           <div className="move-history-emojis">
             {playerMoves[player].slice(-3).map((move, index) => (
-              <span key={index} className="move-emoji">{move.emoji}</span>
+              <b key={index} className="move-emoji">{move.emoji}</b>
             ))}
           </div>
         </div>
