@@ -75,4 +75,15 @@
 .menu-button.online:hover {
   background: linear-gradient(135deg, #ea580c, #dc2626);
 }
-  
+
+.menu-features {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+}
+
+.menu-features p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}

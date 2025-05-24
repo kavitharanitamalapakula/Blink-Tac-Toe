@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Users, Computer, RotateCcw, Home } from './components/Icons';
 import GameHeader from './components/GameHeader';
@@ -6,7 +6,8 @@ import MenuPhase from './components/MenuPhase';
 import CategorySelectionPhase from './components/CategorySelectionPhase';
 import PlayingPhase from './components/PlayingPhase';
 import { useGameLogic } from './hooks/useGameLogic';
-
+import GameInstructions from './components/GameInstructions';
+import "./App.css"
 import "./styles/Board.css"
 import "./styles/Animations.css"
 import "./styles/CategorySelection.css"
@@ -44,6 +45,11 @@ const App = () => {
     backToMenu
   } = useGameLogic();
 
+  const [showInstructions, setShowInstructions] = useState(false);
+
+  const openInstructions = () => setShowInstructions(true);
+  const closeInstructions = () => setShowInstructions(false);
+
   if (gameMode === 'menu') {
     return (
       <MenuPhase
@@ -60,6 +66,7 @@ const App = () => {
           onBackToMenu={backToMenu}
           onReset={resetGame}
           gameMode={gameMode}
+          onOpenInstructions={openInstructions}
         />
 
         {gamePhase === 'category-selection' && (
@@ -81,6 +88,14 @@ const App = () => {
             board={board}
             onCellClick={handleCellClick}
           />
+        )}
+
+        {showInstructions && (
+          <div className="winner-modal-overlay">
+            <div className="winner-container">
+              <GameInstructions onClose={closeInstructions} />
+            </div>
+          </div>
         )}
       </div>
     </div>

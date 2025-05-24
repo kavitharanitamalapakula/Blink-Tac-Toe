@@ -40,6 +40,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10; /* Ensure button is above other elements */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
 }
 
 .close-winner-btn:hover {

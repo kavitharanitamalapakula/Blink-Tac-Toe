@@ -1,12 +1,38 @@
-# React + Vite
+# Emoji Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive emoji-based Tic-Tac-Toe game built with React. Players can choose from various emoji categories to customize their game pieces and play against another player or an AI opponent. The game features smooth animations, sound effects, and a move history to enhance the gameplay experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Select from multiple emoji categories including animals, fruits, vehicles, sports, food, and nature.
+- Play offline against another player or online mode (if implemented).
+- Category selection phase to choose your emoji set.
+- Interactive game board with clickable cells.
+- Move history tracking.
+- Sound effects for moves and winning.
+- Responsive design for different screen sizes.
+- Smooth animations and visual effects.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- On launch, select the game mode (offline or online).
+- Choose your emoji category during the category selection phase.
+- Take turns clicking on the board cells to place your emoji.
+- The game will indicate the current player and announce the winner.
+- Use the menu options to reset the game or return to the main menu.
+
+## Project Structure
+
+- `src/` - Source code including components, hooks, and styles.
+- `public/` - Static assets like favicon and images.
+- `src/components/` - React components for different game phases and UI elements.
+- `src/hooks/` - Custom hooks for game logic and AI moves.
+- `src/styles/` - CSS files for styling the game.
+- `src/assets/` - Emoji animations and sound effects.
+
+## Technologies Used
+
+- React
+- JavaScript (ES6+)
+- CSS
+
