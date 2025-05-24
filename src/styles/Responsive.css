@@ -1,0 +1,15 @@
+@media (max-width: 640px) {
+  .game-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .players-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .board-cell {
+    font-size: 4rem;
+  }
+}

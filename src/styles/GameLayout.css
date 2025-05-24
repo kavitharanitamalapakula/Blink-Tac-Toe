@@ -1,0 +1,10 @@
+.game-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #581c87 0%, #1e3a8a 50%, #312e81 100%);
+  padding: 1rem;
+}
+
+.game-wrapper {
+  max-width: 64rem;
+  margin: 0 auto;
+}
