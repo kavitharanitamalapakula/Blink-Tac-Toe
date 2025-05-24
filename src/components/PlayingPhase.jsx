@@ -22,7 +22,7 @@ const PlayingPhase = ({
         playerMoves={playerMoves}
       />
 
-      <div className='main-container' style={{display:"flex", justifyContent:"space-around"}}>
+      <div className='main-container' style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
         <Board
           board={board}
           onCellClick={onCellClick}

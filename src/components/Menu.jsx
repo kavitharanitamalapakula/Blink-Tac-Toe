@@ -25,12 +25,6 @@ const Menu = ({ onSelectOffline, onSelectOnline }) => {
             Play Online (vs Computer)
           </button>
         </div>
-
-        <div className="menu-features">
-          <p>
-            ✨ Features: Emoji categories, vanishing pieces, guaranteed winner!
-          </p>
-        </div>
       </div>
     </div>
   );
